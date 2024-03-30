@@ -23,10 +23,10 @@ const initialize = async () => {
 initialize()
 const convertDbObject = dbobject => {
   return {
-    playerId: dbObject.player_id,
-    playerName: dbObject.player_name,
-    jerseyNumber: dbObject.jersey_number,
-    role: dbObject.role,
+    playerId: dbobject.player_id,
+    playerName: dbobject.player_name,
+    jerseyNumber: dbobject.jersey_number,
+    role: dbobject.role,
   }
 }
 app.get('/players/', async (req, res) => {
